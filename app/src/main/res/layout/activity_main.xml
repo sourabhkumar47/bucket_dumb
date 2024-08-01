@@ -92,7 +92,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            app:cardCornerRadius="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@android:color/white"
             android:background="@drawable/card_border_yellow"
         app:cardElevation="4dp">
 
@@ -103,10 +104,10 @@
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="32dp"
-                    android:src="@drawable/icon_check"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/icon_check" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -155,10 +156,10 @@
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/stopwatch"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/stopwatch" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -192,6 +193,7 @@
     </LinearLayout>
 
     <!-- Cash Collected Card -->
+    <!-- Cash Collected Card -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cashCollectedCard"
         android:layout_width="0dp"
@@ -203,35 +205,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:cardBackgroundColor="@color/green"
         app:cardCornerRadius="32dp"
+        android:paddingTop="32dp"
         app:cardElevation="4dp">
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:padding="16dp"
+            android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="400dp"
+                android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 android:src="@drawable/cash" />
 
-            <TextView
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Cash Collected"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"/>
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="$5000"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Collected"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$5000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -273,12 +285,25 @@
                 android:textSize="18sp"
                 android:textColor="@android:color/black"/>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="16 December 2020"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"/>
+                android:orientation="horizontal"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16 December 2020"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -290,23 +315,40 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/rounded_background_green"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="6dp"
                     android:text="Super Fast Delivery"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_background_light"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="6dp"
                     android:text="12 Trays of Eggs"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
             </LinearLayout>
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="16dp"
                 android:text="Eggrice Shop"
-                android:textSize="14sp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vendor Name"
+                android:textSize="16sp"
                 android:textColor="@android:color/black"/>
 
             <TextView
@@ -318,11 +360,11 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_marginTop="16dp"
                 android:text="Confirm Order"
                 android:textColor="@android:color/white"
-                android:background="@color/design_default_color_primary"/>
+                android:backgroundTint="@color/green_light"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
