@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@drawable/outline_edit_text_background"
             android:padding="16dp">
 
             <!-- Company Logo -->
@@ -99,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="12dp"
+                android:background="@drawable/outline_edit_text_background"
                 android:layout_marginBottom="8dp">
 
                 <ImageView
@@ -126,6 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:background="@drawable/outline_edit_text_background"
                 android:padding="12dp"
                 android:layout_marginBottom="8dp">
 
@@ -153,13 +156,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:background="@drawable/outline_edit_text_background"
                 android:padding="12dp"
                 android:layout_marginBottom="8dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/profileicon"
+                    android:src="@drawable/outline_local_phone_24"
                     android:layout_gravity="center_vertical"
                     android:layout_marginEnd="8dp"/>
 
@@ -181,13 +185,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:background="@drawable/outline_edit_text_background"
                 android:padding="12dp"
                 android:layout_marginBottom="8dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/profileicon"
+                    android:src="@drawable/outline_home_24"
                     android:layout_marginEnd="8dp"/>
 
                 <EditText
@@ -208,13 +213,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:background="@drawable/outline_edit_text_background"
                 android:padding="12dp"
                 android:layout_marginBottom="16dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/profileicon"                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/outline_directions_car_24"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginEnd="8dp"/>
 
                 <EditText
